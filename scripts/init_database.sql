@@ -14,7 +14,7 @@ WARNING:
 */
 USE master;
 Go 
--- drop and ercreate 'DataWarehouse' database 
+-- drop and recreate 'DataWarehouse' database 
 IF EXISTS(SELECT 1 FROM sys.databases where name = 'DataWarehouse' )
 BEGIN 
      ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
